@@ -7,7 +7,7 @@ smallest_hash = {}
 name_hash.each {|key, value|
 if smallest_value.empty? == TRUE
   smallest_value << value
-  smallest_hash.store(:key, value)
+  smallest_key << key
 if value < smallest_value
 smallest_value = value
 smallest_hash = (:key, value)
