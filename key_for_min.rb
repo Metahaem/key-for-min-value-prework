@@ -15,5 +15,5 @@ smallest_value << value
 smallest_key.shift
 smallest_key << key
 end}
-smallest_key
+smallest_key.last
 end
