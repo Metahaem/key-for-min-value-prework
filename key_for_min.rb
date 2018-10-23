@@ -8,9 +8,12 @@ name_hash.each {|key, value|
 if smallest_value.empty? == TRUE
   smallest_value << value
   smallest_key << key
-if value < smallest_value
-smallest_value = value
-smallest_hash = (:key, value)
+end
+if value < smallest_value && smallest_value.empty? == false
+smallest_value.shift 
+smallest_value << value
+smallest_key.shift
+smallest_key << key
 end}
-smallest_hash
+smallest_key
 end
