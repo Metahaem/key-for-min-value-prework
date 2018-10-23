@@ -10,7 +10,7 @@ if smallest_value.empty? == TRUE
   smallest_hash.store(:key, value)
 if value < smallest_value
 smallest_value = value
-smallest_hash.store(:key, value)
+smallest_hash = (:key, value)
 end}
 smallest_hash
 end
