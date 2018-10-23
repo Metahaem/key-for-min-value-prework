@@ -7,11 +7,11 @@ smallest_hash = {}
 name_hash.each {|key, value|
 if smallest_value.empty? == TRUE
   smallest_value << value
-  smallest_hash << 
-  new_hash[:key] << value
-elsif
-
+  smallest_hash[:key] << value
+elsif value < smallest_value
+smallest_value = value
+smallest_hash[:key] << value
 else return nil
-new_hash
+smallest_hash
 end}
 end
