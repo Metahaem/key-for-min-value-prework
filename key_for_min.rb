@@ -6,5 +6,5 @@ new_hash = name_hash.map {|key, value|
 if value == value.smallest
   new_hash << key
 new_hash
-end
+end}
 end
