@@ -8,11 +8,9 @@ name_hash.each {|key, value|
 if smallest_value.empty? == TRUE
   smallest_value << value
   smallest_hash.store(:key, value)
-elsif value < smallest_value
+if value < smallest_value
 smallest_value = value
 smallest_hash.store(:key, value)
-else return nil
-
 end}
 smallest_hash
 end
